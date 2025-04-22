@@ -11,8 +11,8 @@ public class SumController {
     @Autowired
     private SumService sumService;
 
-    @GetMapping("/sum")
-    public int sum(@RequestParam int num1,@RequestParam int num2) {
+    @GetMapping("/div")
+    public float div(@RequestParam float num1,@RequestParam float num2) {
         return sumService.addNumbers(num1, num2);
     }
 }
